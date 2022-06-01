@@ -1,0 +1,24 @@
+//
+// Created by gtygo on 2023/1/8.
+//
+
+#ifndef REDISARRAY_COMMANDS_H
+#define REDISARRAY_COMMANDS_H
+
+#define REDISARRAY_MODULE_NAME "array"
+#define REDISARRAY_VER 1
+
+#define REDISARRAY_WD_FLAG "write deny-oom"
+#define REDISARRAY_W_FLAG "write"
+#define REDISARRAY_R_FLAG "readonly"
+
+#define REDISARRAY_CREATE_CMD "ARR.CREATE"
+#define REDISARRAY_RANGE_CMD "ARR.RANGE"
+#define REDISARRAY_LEN_CMD "ARR.LEN"
+#define REDISARRAY_GET_CMD "ARR.GET"
+#define REDISARRAY_SET_CMD "ARR.SET"
+#define REDISARRAY_SUM_CMD "ARR.SUM"
+
+
+
+#endif //REDISARRAY_COMMANDS_H
