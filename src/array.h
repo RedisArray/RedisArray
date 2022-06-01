@@ -9,7 +9,7 @@
 
 #define MAX_DIMS_SIZE 5
 
-
+RedisModuleType *RedisArrayType;
 /*
  * example:
  *
@@ -34,7 +34,10 @@ typedef struct {
     uint64_t steps[MAX_DIMS_SIZE];
     uint64_t len;
     int *data;
+    RedisModuleString *key;
 } ArrayObjectValue_integer;
+
+ArrayObjectValue_integer *createArrayObj(int n, const uint32_t *dims);
 
 int initArrayObj(ArrayObjectValue_integer *obj, int N, const uint32_t *dims);
 

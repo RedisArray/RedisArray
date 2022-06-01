@@ -7,6 +7,14 @@
 #include <string.h>
 
 
+
+
+ArrayObjectValue_integer *createArrayObj(int n, const uint32_t *dims) {
+    ArrayObjectValue_integer *o = RedisModule_Calloc(1, sizeof(*o));
+    initArrayObj(o, n, dims);
+    return o;
+}
+
 int initArrayObj(ArrayObjectValue_integer *obj, int N, const uint32_t *dims) {
     obj->N = N;
     memset(obj->dims, 0, sizeof(obj->dims));
