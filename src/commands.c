@@ -44,8 +44,6 @@ int ArrayRange_RedisCommand(RedisModuleCtx *ctx, RedisModuleString **argv, int a
     RedisModule_ReplySetArrayLength(ctx, 3);
     RedisModule_ReplySetArrayLength(ctx, 2); // Set len of top array
     RedisModule_ReplySetArrayLength(ctx, 2);
-
-
     return REDISMODULE_OK;
 }
 
